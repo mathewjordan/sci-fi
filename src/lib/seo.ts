@@ -19,15 +19,17 @@ const buildManifestSEO = async (manifest: Manifest, path: string) => {
     description: getLabel(manifest.summary).join(" - "),
     canonical: `${baseUrl}${path}`,
     openGraph: {
-      images: images?.map((item: any) => {
-        return {
-          url: item.id || "",
-          type: item.format || "",
-          width: item.width || 200,
-          height: item.height || 200,
-          alt: title || "",
-        };
-      }),
+      images: images
+        ? images?.map((item: any) => {
+            return {
+              url: item.id || "",
+              type: item.format || "",
+              width: item.width || 200,
+              height: item.height || 200,
+              alt: title || "",
+            };
+          })
+        : [],
     },
   };
 };
