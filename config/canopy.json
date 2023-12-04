@@ -1,4 +1,4 @@
 {
   "collection": "https://iiif.archive.org/iiif/3/SciFi_Horror/collection.json",
-  "metadata": ["date", "director", "language"]
+  "metadata": ["director", "language", "year"]
 }
