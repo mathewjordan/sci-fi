@@ -5,7 +5,7 @@ export const getResourceImage = (
 ) => {
   if (Array.isArray(resource)) resource = resource[0];
 
-  if (!resource.service) return resource.id;
+  if (!resource?.service) return resource?.id;
 
   if (!Array.isArray(resource.service)) {
     if (resource.service["@id"])

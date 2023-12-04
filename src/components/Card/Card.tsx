@@ -19,8 +19,12 @@ const Card: React.FC<CardProps> = ({ resource }) => {
   let aspectRatio = 1;
 
   const { label, homepage, thumbnail } = resource;
+
   // @ts-ignore
-  const { width, height } = getRandomItem(thumbnail);
+  const item = getRandomItem(thumbnail);
+
+  const width = item?.width;
+  const height = item?.height;
 
   if (width && height) aspectRatio = width / height;
 

@@ -1,3 +1,4 @@
 {
-  "collection": "https://iiif.archive.org/iiif/3/SciFi_Horror/collection.json"
+  "collection": "https://iiif.archive.org/iiif/3/SciFi_Horror/collection.json",
+  "metadata": ["data", "director", "language"]
 }
