@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mathewjordan.github.io/sci-fi
+
+# Sitemaps
+Sitemap: https://mathewjordan.github.io/sci-fi/sitemap.xml
